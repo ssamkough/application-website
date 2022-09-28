@@ -20,7 +20,9 @@ const fadeIn = keyframes`
   }
 `;
 
-const Text = styled.span<{ $isDisplayNone?: boolean }>`
+const Text = styled.span.attrs({
+    className: 'span-text',
+})<{ $isDisplayNone?: boolean }>`
     font-size: 2em;
     display: ${({ $isDisplayNone }) => ($isDisplayNone ? 'none' : 'inline')};
     animation: 1s ${fadeIn} ease-out;
@@ -43,6 +45,10 @@ const Home = (): React.ReactElement => {
     const onBackspace = () => {
         setCurrentStep((step) => step - 1);
     };
+
+    useEffect(() => {
+        if (currentStep) window.scrollTo(0, document.body.scrollHeight);
+    }, [currentStep]);
 
     useEffect(() => {
         const mouseDownHandler = () => {
