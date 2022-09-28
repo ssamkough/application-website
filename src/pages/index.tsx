@@ -42,6 +42,16 @@ const Home = (): React.ReactElement => {
     };
 
     useEffect(() => {
+        const mouseDownHandler = () => {
+            onEnter();
+        };
+        document.addEventListener('mousedown', mouseDownHandler);
+        return () => {
+            document.removeEventListener('mousedown', mouseDownHandler);
+        };
+    }, []);
+
+    useEffect(() => {
         const keyDownHandler = (event: KeyboardEvent) => {
             if (event.key === 'Enter') {
                 event.preventDefault();
