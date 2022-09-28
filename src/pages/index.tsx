@@ -25,15 +25,12 @@ const Text = styled.span<{ $isDisplayNone?: boolean }>`
     display: ${({ $isDisplayNone }) => ($isDisplayNone ? 'none' : 'inline')};
     animation: 1s ${fadeIn} ease-out;
     @media only screen and (max-width: 768px) {
-        font-size: 1.4em;
+        font-size: 1.6em;
     }
 `;
 
 const SmallText = styled.span`
     font-size: 0.6em;
-    @media only screen and (max-width: 768px) {
-        font-size: 0.4em;
-    }
 `;
 
 const Home = (): React.ReactElement => {
@@ -105,8 +102,8 @@ const Home = (): React.ReactElement => {
                     ...and vercel definitely fills multiple of those gaps for me, in a huge way
                 </Text>
                 <Text $isDisplayNone={currentStep < 5}>
-                    which is why i ask u, would u be able to help me put my foot in the door? id love to get on a call
-                    to talk more about it all!
+                    which is why i ask u, would u be able to help me put my foot in the door?{' '}
+                    <strong>id love to get on a call</strong> to talk more about it all!
                 </Text>
                 <Text $isDisplayNone={currentStep < 6}>
                     i understand either way but regardless, i appreciate the time u took to read this. thank u :D
