@@ -24,10 +24,16 @@ const Text = styled.span<{ $isDisplayNone?: boolean }>`
     font-size: 2em;
     display: ${({ $isDisplayNone }) => ($isDisplayNone ? 'none' : 'inline')};
     animation: 1s ${fadeIn} ease-out;
+    @media only screen and (max-width: 768px) {
+        font-size: 1.4em;
+    }
 `;
 
 const SmallText = styled.span`
     font-size: 0.6em;
+    @media only screen and (max-width: 768px) {
+        font-size: 0.4em;
+    }
 `;
 
 const Home = (): React.ReactElement => {
@@ -72,7 +78,8 @@ const Home = (): React.ReactElement => {
         <Layout>
             <Container>
                 <Text>
-                    hi there 👋 <SmallText>(u can press enter to continue, backspace to delete)</SmallText>
+                    hi there 👋 <br />
+                    <SmallText>(enter/click/touch to continue ; backspace to delete)</SmallText>
                 </Text>
                 <Text $isDisplayNone={currentStep < 1}>happy you&apos;re here, nice to meet you</Text>
                 <Text $isDisplayNone={currentStep < 2}>
