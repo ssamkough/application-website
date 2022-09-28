@@ -1,8 +1,11 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import type { AppProps } from 'next/app';
+import React from 'react';
+import '../styles/globals.css';
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
-}
+const _app = ({ Component, pageProps }: AppProps): React.ReactElement => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const AnyComponent = Component as any;
+    return <AnyComponent {...pageProps} />;
+};
 
-export default MyApp
+export default _app;
