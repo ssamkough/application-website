@@ -24,8 +24,8 @@ const Layout = ({ children }: Props): React.ReactElement => (
         <Head>
             <title>▲</title>
             <meta name="viewport" content="width=device-width, initial-scale=1" />
-            <meta property="og:title" content="application to vercel" />
-            <meta property="og:description" content="i'd like to apply to vercel pls ▲ look at the cool triangle" />
+            <meta property="og:title" content="application to patreon" />
+            <meta property="og:description" content="i'd like to apply to patreon pls ▲ look at the cool triangle" />
             <meta property="og:image" content="https://sammysamkough.com/assets/fam.jpg" />
         </Head>
         <Container>

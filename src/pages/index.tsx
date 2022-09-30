@@ -100,12 +100,12 @@ const Home = (): React.ReactElement => {
                     <span style={{ color: 'indigo' }}>h</span>, and i love building things that i find meaningful
                 </Text>
                 <Text $isDisplayNone={currentStep < 3}>
-                    those things range from making the web literally <strong>go faster</strong>, increase{' '}
-                    <strong>developer productivity</strong>, help users <strong>use the web</strong>, to literally a
-                    billion other things (not just web-related)
+                    those things range from helping <strong>creators make more</strong>, to increasing{' '}
+                    <strong>the value of the creator economy</strong>, to helping creators{' '}
+                    <strong>make the things they love</strong>, to literally a billion other things
                 </Text>
                 <Text $isDisplayNone={currentStep < 4}>
-                    ...and vercel definitely fills multiple of those gaps for me, in a huge way
+                    ...and patreon definitely fills multiple of those gaps for me, in a huge way
                 </Text>
                 <Text $isDisplayNone={currentStep < 5}>
                     which is why i ask u, would u be able to help me put my foot in the door?{' '}
