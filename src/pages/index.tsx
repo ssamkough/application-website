@@ -87,13 +87,13 @@ const Home = (): React.ReactElement => {
                 <Text $isDisplayNone={currentStep < 1}>happy you&apos;re here, nice to meet you</Text>
                 <Text $isDisplayNone={currentStep < 2}>
                     my name&apos;s <span style={{ color: 'red' }}>s</span>
-                    <span style={{ color: 'orange' }}>a</span>
+                    <span style={{ color: 'yellow' }}>a</span>
                     <span style={{ color: 'yellow' }}>m</span>
                     <span style={{ color: 'green' }}>m</span>
                     <span style={{ color: 'blue' }}>y</span> <span style={{ color: 'indigo' }}>s</span>
-                    <span style={{ color: 'violet' }}>a</span>
+                    <span style={{ color: 'indigo' }}>a</span>
                     <span style={{ color: 'red' }}>m</span>
-                    <span style={{ color: 'orange' }}>k</span>
+                    <span style={{ color: 'yellow' }}>k</span>
                     <span style={{ color: 'yellow' }}>o</span>
                     <span style={{ color: 'green' }}>u</span>
                     <span style={{ color: 'blue' }}>g</span>
