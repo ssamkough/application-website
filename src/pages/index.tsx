@@ -104,7 +104,9 @@ const Home = (): React.ReactElement => {
                     increasing <strong>the value of the creator economy</strong>, to helping{' '}
                     <strong>battle climate change</strong>, to literally a billion other things
                 </Text>
-                <Text $isDisplayNone={currentStep < 4}>...and possibly, this next project you're wanting to build</Text>
+                <Text $isDisplayNone={currentStep < 4}>
+                    ...and possibly, this next project you&apos;re wanting to build
+                </Text>
                 <Text $isDisplayNone={currentStep < 5}>
                     i&apos;d <strong>love</strong> to get on a call to talk more about this opportunity
                 </Text>
