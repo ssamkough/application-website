@@ -106,9 +106,9 @@ const Home = (): React.ReactElement => {
                 </Text>
                 <Text $isDisplayNone={currentStep < 4}>...and possibly, this next project you're wanting to build</Text>
                 <Text $isDisplayNone={currentStep < 5}>
-                    i'd <strong>love</strong> to get on a call to talk more about this opportunity
+                    i&apos;d <strong>love</strong> to get on a call to talk more about this opportunity
                 </Text>
-                <Text $isDisplayNone={currentStep < 6}>appreciate the time u took to read this. thank u :D</Text>
+                <Text $isDisplayNone={currentStep < 6}>appreciate the time you took to read this. thank you :D</Text>
                 <Text $isDisplayNone={currentStep < 7}>love, sammy ❤️</Text>
             </Container>
         </Layout>
