@@ -81,34 +81,32 @@ const Home = (): React.ReactElement => {
         <Layout>
             <Container>
                 <Text>
-                    hi there 👋 <br />
+                    hey suhail 👋 <br />
                     <SmallText>(enter/click/touch to continue ; backspace to delete)</SmallText>
                 </Text>
                 <Text $isDisplayNone={currentStep < 1}>happy you&apos;re here, nice to meet you</Text>
                 <Text $isDisplayNone={currentStep < 2}>
                     my name&apos;s <span style={{ color: 'red' }}>s</span>
-                    <span style={{ color: 'yellow' }}>a</span>
-                    <span style={{ color: 'yellow' }}>m</span>
+                    <span style={{ color: 'orange' }}>a</span>
+                    <span style={{ color: 'goldenrod' }}>m</span>
                     <span style={{ color: 'green' }}>m</span>
                     <span style={{ color: 'blue' }}>y</span> <span style={{ color: 'indigo' }}>s</span>
                     <span style={{ color: 'indigo' }}>a</span>
                     <span style={{ color: 'red' }}>m</span>
-                    <span style={{ color: 'yellow' }}>k</span>
-                    <span style={{ color: 'yellow' }}>o</span>
+                    <span style={{ color: 'orange' }}>k</span>
+                    <span style={{ color: 'goldenrod' }}>o</span>
                     <span style={{ color: 'green' }}>u</span>
                     <span style={{ color: 'blue' }}>g</span>
                     <span style={{ color: 'indigo' }}>h</span>, and i love building things that i find meaningful
                 </Text>
                 <Text $isDisplayNone={currentStep < 3}>
-                    those things range from helping <strong>developers work more efficiently</strong>, to increasing{' '}
-                    <strong>the value of the creator economy</strong>, to helping
+                    those things could range from helping <strong>developers work more efficiently</strong>, to
+                    increasing <strong>the value of the creator economy</strong>, to helping{' '}
                     <strong>battle climate change</strong>, to literally a billion other things
                 </Text>
-                <Text $isDisplayNone={currentStep < 4}>
-                    ...and i believe whatever you plan on building on with this new project can also fulfill that
-                </Text>
+                <Text $isDisplayNone={currentStep < 4}>...and possibly, this next project you're wanting to build</Text>
                 <Text $isDisplayNone={currentStep < 5}>
-                    <strong>id love to get on a call</strong> to talk more about it and chatting in general
+                    i'd <strong>love</strong> to get on a call to talk more about this opportunity
                 </Text>
                 <Text $isDisplayNone={currentStep < 6}>appreciate the time u took to read this. thank u :D</Text>
                 <Text $isDisplayNone={currentStep < 7}>love, sammy ❤️</Text>
