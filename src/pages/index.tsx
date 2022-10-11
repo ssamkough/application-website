@@ -100,20 +100,17 @@ const Home = (): React.ReactElement => {
                     <span style={{ color: 'indigo' }}>h</span>, and i love building things that i find meaningful
                 </Text>
                 <Text $isDisplayNone={currentStep < 3}>
-                    those things range from helping <strong>creators make more</strong>, to increasing{' '}
-                    <strong>the value of the creator economy</strong>, to helping creators{' '}
-                    <strong>make the things they love</strong>, to literally a billion other things
+                    those things range from helping <strong>developers work more efficiently</strong>, to increasing{' '}
+                    <strong>the value of the creator economy</strong>, to helping
+                    <strong>battle climate change</strong>, to literally a billion other things
                 </Text>
                 <Text $isDisplayNone={currentStep < 4}>
-                    ...and patreon definitely fills multiple of those gaps for me, in a huge way
+                    ...and i believe whatever you plan on building on with this new project can also fulfill that
                 </Text>
                 <Text $isDisplayNone={currentStep < 5}>
-                    which is why i ask u, would u be able to help me put my foot in the door?{' '}
-                    <strong>id love to get on a call</strong> to talk more about it all!
+                    <strong>id love to get on a call</strong> to talk more about it and chatting in general
                 </Text>
-                <Text $isDisplayNone={currentStep < 6}>
-                    i understand either way but regardless, i appreciate the time u took to read this. thank u :D
-                </Text>
+                <Text $isDisplayNone={currentStep < 6}>appreciate the time u took to read this. thank u :D</Text>
                 <Text $isDisplayNone={currentStep < 7}>love, sammy ❤️</Text>
             </Container>
         </Layout>

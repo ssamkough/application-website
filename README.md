@@ -1,5 +1,5 @@
-# patreon.engineer
+# iosforhire.dev
 
-cutesy little website for patreon peeps
+cutesy little website for suhail peeps
 
-live at [patreon.engineer](https://patreon.engineer)
+live at [iosforhire.dev](https://iosforhire.dev)
