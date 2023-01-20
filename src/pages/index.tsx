@@ -3,17 +3,17 @@ import styled, { keyframes } from 'styled-components';
 import Layout from '../components/Layout';
 
 const COMPANY = '[placeholder-company]';
-const THING_ONE = () => (
+const ThingOne = () => (
     <>
         helping <strong>people do this</strong>
     </>
 );
-const THING_TWO = () => (
+const ThingTwo = () => (
     <>
         increasing <strong>this thing</strong>
     </>
 );
-const THING_THREE = () => (
+const ThingThree = () => (
     <>
         building <strong>better stuff</strong>
     </>
@@ -103,7 +103,7 @@ const Home = (): React.ReactElement => {
                     hey {COMPANY} 👋 <br />
                     <SmallText>(enter/click/touch to continue ; backspace to delete)</SmallText>
                 </Text>
-                <Text $isDisplayNone={currentStep < 1}>nice to meet y'all :D</Text>
+                <Text $isDisplayNone={currentStep < 1}>nice to meet y&apos;all :D</Text>
                 <Text $isDisplayNone={currentStep < 2}>
                     my name&apos;s <span style={{ color: 'red' }}>s</span>
                     <span style={{ color: 'orange' }}>a</span>
@@ -119,8 +119,8 @@ const Home = (): React.ReactElement => {
                     <span style={{ color: 'indigo' }}>h</span>, and i love building things that i find meaningful
                 </Text>
                 <Text $isDisplayNone={currentStep < 3}>
-                    those things range from {THING_ONE}, to {THING_TWO}, to {THING_THREE}, to literally a billion other
-                    things
+                    those things range from <ThingOne />, to <ThingTwo />, to <ThingThree />, to literally a billion
+                    other things
                 </Text>
                 <Text $isDisplayNone={currentStep < 4}>
                     ...and possibly, the next project y&apos;all are planning on building
