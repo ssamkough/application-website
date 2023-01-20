@@ -62,11 +62,11 @@ const Home = (): React.ReactElement => {
 
     useEffect(() => {
         const keyDownHandler = (event: KeyboardEvent) => {
-            if (event.key === 'Enter') {
+            if (event.key === 'Enter' && currentStep < 7) {
                 event.preventDefault();
                 onEnter();
             }
-            if (event.key == 'Backspace') {
+            if (event.key == 'Backspace' && currentStep > 0) {
                 event.preventDefault();
                 onBackspace();
             }
@@ -75,16 +75,16 @@ const Home = (): React.ReactElement => {
         return () => {
             document.removeEventListener('keydown', keyDownHandler);
         };
-    }, []);
+    }, [currentStep]);
 
     return (
         <Layout>
             <Container>
                 <Text>
-                    hey suhail 👋 <br />
+                    hey mrbeast team 👋 <br />
                     <SmallText>(enter/click/touch to continue ; backspace to delete)</SmallText>
                 </Text>
-                <Text $isDisplayNone={currentStep < 1}>happy you&apos;re here, nice to meet you</Text>
+                <Text $isDisplayNone={currentStep < 1}>nice to meet y'all :D</Text>
                 <Text $isDisplayNone={currentStep < 2}>
                     my name&apos;s <span style={{ color: 'red' }}>s</span>
                     <span style={{ color: 'orange' }}>a</span>
@@ -100,17 +100,17 @@ const Home = (): React.ReactElement => {
                     <span style={{ color: 'indigo' }}>h</span>, and i love building things that i find meaningful
                 </Text>
                 <Text $isDisplayNone={currentStep < 3}>
-                    those things could range from helping <strong>developers work more efficiently</strong>, to
-                    increasing <strong>the value of the creator economy</strong>, to helping{' '}
-                    <strong>battle climate change</strong>, to literally a billion other things
+                    those things range from helping <strong>creators make more</strong>, to increasing{' '}
+                    <strong>the value of the creator economy</strong>, to helping creators{' '}
+                    <strong>make the things they love</strong>, to literally a billion other things
                 </Text>
                 <Text $isDisplayNone={currentStep < 4}>
-                    ...and possibly, this next project you&apos;re wanting to build
+                    ...and possibly, the next project y'all are planning on building
                 </Text>
                 <Text $isDisplayNone={currentStep < 5}>
-                    i&apos;d <strong>love</strong> to get on a call to talk more about this opportunity
+                    i&apos;d <strong>love</strong> to hop on a call to talk more about this opportunity
                 </Text>
-                <Text $isDisplayNone={currentStep < 6}>appreciate the time you took to read this. thank you :D</Text>
+                <Text $isDisplayNone={currentStep < 6}>appreciate the time y'all took to read this. thank you :D</Text>
                 <Text $isDisplayNone={currentStep < 7}>love, sammy ❤️</Text>
             </Container>
         </Layout>
