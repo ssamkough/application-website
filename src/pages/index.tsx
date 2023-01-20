@@ -2,6 +2,23 @@ import React, { useEffect, useState } from 'react';
 import styled, { keyframes } from 'styled-components';
 import Layout from '../components/Layout';
 
+const COMPANY = '[placeholder-company]';
+const THING_ONE = () => (
+    <>
+        helping <strong>people do this</strong>
+    </>
+);
+const THING_TWO = () => (
+    <>
+        increasing <strong>this thing</strong>
+    </>
+);
+const THING_THREE = () => (
+    <>
+        building <strong>better stuff</strong>
+    </>
+);
+
 const Container = styled.div`
     max-width: 800px;
     width: 100%;
@@ -52,7 +69,9 @@ const Home = (): React.ReactElement => {
 
     useEffect(() => {
         const mouseDownHandler = () => {
-            onEnter();
+            if (currentStep < 7) {
+                onEnter();
+            }
         };
         document.addEventListener('mousedown', mouseDownHandler);
         return () => {
@@ -81,7 +100,7 @@ const Home = (): React.ReactElement => {
         <Layout>
             <Container>
                 <Text>
-                    hey mrbeast team 👋 <br />
+                    hey {COMPANY} 👋 <br />
                     <SmallText>(enter/click/touch to continue ; backspace to delete)</SmallText>
                 </Text>
                 <Text $isDisplayNone={currentStep < 1}>nice to meet y'all :D</Text>
@@ -100,17 +119,18 @@ const Home = (): React.ReactElement => {
                     <span style={{ color: 'indigo' }}>h</span>, and i love building things that i find meaningful
                 </Text>
                 <Text $isDisplayNone={currentStep < 3}>
-                    those things range from helping <strong>creators make more</strong>, to increasing{' '}
-                    <strong>the value of the creator economy</strong>, to helping creators{' '}
-                    <strong>make the things they love</strong>, to literally a billion other things
+                    those things range from {THING_ONE}, to {THING_TWO}, to {THING_THREE}, to literally a billion other
+                    things
                 </Text>
                 <Text $isDisplayNone={currentStep < 4}>
-                    ...and possibly, the next project y'all are planning on building
+                    ...and possibly, the next project y&apos;all are planning on building
                 </Text>
                 <Text $isDisplayNone={currentStep < 5}>
                     i&apos;d <strong>love</strong> to hop on a call to talk more about this opportunity
                 </Text>
-                <Text $isDisplayNone={currentStep < 6}>appreciate the time y'all took to read this. thank you :D</Text>
+                <Text $isDisplayNone={currentStep < 6}>
+                    appreciate the time y&apos;all took to read this. thank you :D
+                </Text>
                 <Text $isDisplayNone={currentStep < 7}>love, sammy ❤️</Text>
             </Container>
         </Layout>
